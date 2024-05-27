@@ -1,4 +1,5 @@
-## Hi there 👋
+## ![image](https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417)
+
 
 <!--
 **CodeWarriorLLC/CodeWarriorLLC** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
