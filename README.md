@@ -1,11 +1,11 @@
 ## ![image](https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417)
-- Custom Programming | Software Development
-- Microsoft Office Expert | Financial Analysis
-- ArcGIS | Geospatial Databases
-- API Integration | System Integration
-- Data Analytics & Visualization | Business Intelligence
-- Web Development | Technical Solutions
-- Software Training | Versatile Across Industries
+Custom Programming | Software Development
+Microsoft Office Expert | Financial Analysis
+ArcGIS | Geospatial Databases
+API Integration | System Integration
+Data Analytics & Visualization | Business Intelligence
+Web Development | Technical Solutions
+Software Training | Versatile Across Industries
 
 <!--
 **CodeWarriorLLC/CodeWarriorLLC** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
