@@ -21,34 +21,16 @@
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        .dropdown {
+        .container {
             position: absolute;
             top: 50%;
             left: 10%;
             transform: translateY(-50%);
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        .dropdown-btn {
+        .button {
             padding: 10px 20px;
             font-size: 16px;
             color: #fff;
@@ -57,9 +39,11 @@
             border-radius: 5px;
             text-align: center;
             text-decoration: none;
+            opacity: 0.9;
         }
-        .dropdown-btn:hover {
+        .button:hover {
             background-color: #0056b3;
+            opacity: 1;
         }
         .contact-link {
             position: absolute;
@@ -80,24 +64,21 @@
 </head>
 <body>
     <div class="company-name">CodeWarrior</div>
-    <div class="dropdown">
-        <button class="dropdown-btn">Services</button>
-        <div class="dropdown-content">
-            <a href="custom-programming.html">Custom Programming</a>
-            <a href="software-development.html">Software Development</a>
-            <a href="microsoft-office.html">Microsoft Office Expert</a>
-            <a href="financial-analysis.html">Financial Analysis</a>
-            <a href="arcgis.html">ArcGIS</a>
-            <a href="geospatial-databases.html">Geospatial Databases</a>
-            <a href="api-integration.html">API Integration</a>
-            <a href="system-integration.html">System Integration</a>
-            <a href="data-analytics.html">Data Analytics & Visualization</a>
-            <a href="business-intelligence.html">Business Intelligence</a>
-            <a href="web-development.html">Web Development</a>
-            <a href="technical-solutions.html">Technical Solutions</a>
-            <a href="software-training.html">Software Training</a>
-            <a href="versatile-industries.html">Versatile Across Industries</a>
-        </div>
+    <div class="container">
+        <a href="custom-programming.html" class="button">Custom Programming</a>
+        <a href="software-development.html" class="button">Software Development</a>
+        <a href="microsoft-office.html" class="button">Microsoft Office Expert</a>
+        <a href="financial-analysis.html" class="button">Financial Analysis</a>
+        <a href="arcgis.html" class="button">ArcGIS</a>
+        <a href="geospatial-databases.html" class="button">Geospatial Databases</a>
+        <a href="api-integration.html" class="button">API Integration</a>
+        <a href="system-integration.html" class="button">System Integration</a>
+        <a href="data-analytics.html" class="button">Data Analytics & Visualization</a>
+        <a href="business-intelligence.html" class="button">Business Intelligence</a>
+        <a href="web-development.html" class="button">Web Development</a>
+        <a href="technical-solutions.html" class="button">Technical Solutions</a>
+        <a href="software-training.html" class="button">Software Training</a>
+        <a href="versatile-industries.html" class="button">Versatile Across Industries</a>
     </div>
     <a href="contact.html" class="contact-link">Contact Me</a>
 </body>
