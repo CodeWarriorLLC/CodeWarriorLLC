@@ -12,6 +12,15 @@
             background: url('https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417') no-repeat center center fixed;
             background-size: cover;
         }
+        .company-name {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
         .container {
             position: absolute;
             top: 50%;
@@ -54,6 +63,7 @@
     </style>
 </head>
 <body>
+    <div class="company-name">CodeWarrior</div>
     <div class="container">
         <a href="custom-programming.html" class="button">Custom Programming</a>
         <a href="software-development.html" class="button">Software Development</a>
