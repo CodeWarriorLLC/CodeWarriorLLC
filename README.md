@@ -19,7 +19,7 @@
         }
         .header-wrap {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             max-width: 1200px;
             margin: 0 auto;
@@ -31,7 +31,9 @@
         }
         nav {
             display: flex;
+            justify-content: center;
             align-items: center;
+            width: 100%;
         }
         .nmcnav_wrap {
             display: flex;
@@ -55,6 +57,7 @@
         .nmcnav_btn {
             background: #44C7F3;
             border-radius: 5px;
+            color: #fff;
         }
         .nmcnav_dropdown {
             display: none;
@@ -78,6 +81,14 @@
         }
         .nmcnav_li:hover .nmcnav_dropdown {
             display: block;
+        }
+        .nmcnav_text svg {
+            fill: #fff;
+        }
+        .nmcnav_button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     </style>
 </head>
