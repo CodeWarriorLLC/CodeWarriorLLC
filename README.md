@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeWarrior</title>
+    <title>CodeWarrior LLC</title>
     <style>
         body, html {
             height: 100%;
@@ -11,75 +11,134 @@
             font-family: Arial, sans-serif;
             background: url('https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417') no-repeat center center fixed;
             background-size: cover;
-        }
-        .company-name {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 36px;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%);
+        .header-2024 {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 0;
+        }
+        .header-wrap {
             display: flex;
-            flex-direction: column;
-            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
+        .logo svg {
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        .nmcnav_wrap {
+            display: flex;
+            align-items: center;
+        }
+        .nmcnav_primary {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nmcnav_li {
+            position: relative;
+        }
+        .nmcnav_clickable {
             color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
             text-decoration: none;
-            opacity: 0.9;
+            padding: 10px 20px;
+            display: block;
         }
-        .button:hover {
-            background-color: #0056b3;
-            opacity: 1;
+        .nmcnav_btn {
+            background: #44C7F3;
+            border-radius: 5px;
         }
-        .contact-link {
+        .nmcnav_dropdown {
+            display: none;
             position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 16px;
-            color: #007bff;
-            text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.9);
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
         }
-        .contact-link:hover {
-            text-decoration: underline;
-            background-color: rgba(255, 255, 255, 1);
+        .nmcnav_dropdown ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+        .nmcnav_dropdown a {
+            color: #fff;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        .nmcnav_li:hover .nmcnav_dropdown {
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="company-name">CodeWarrior</div>
-    <div class="container">
-        <a href="custom-programming.html" class="button">Custom Programming</a>
-        <a href="software-development.html" class="button">Software Development</a>
-        <a href="microsoft-office.html" class="button">Microsoft Office Expert</a>
-        <a href="financial-analysis.html" class="button">Financial Analysis</a>
-        <a href="arcgis.html" class="button">ArcGIS</a>
-        <a href="geospatial-databases.html" class="button">Geospatial Databases</a>
-        <a href="api-integration.html" class="button">API Integration</a>
-        <a href="system-integration.html" class="button">System Integration</a>
-        <a href="data-analytics.html" class="button">Data Analytics & Visualization</a>
-        <a href="business-intelligence.html" class="button">Business Intelligence</a>
-        <a href="web-development.html" class="button">Web Development</a>
-        <a href="technical-solutions.html" class="button">Technical Solutions</a>
-        <a href="software-training.html" class="button">Software Training</a>
-        <a href="versatile-industries.html" class="button">Versatile Across Industries</a>
-    </div>
-    <a href="contact.html" class="contact-link">Contact Me</a>
+    <header class="header-2024">
+        <div class="header-wrap">
+            <div class="logo">
+                <a href="/" rel="home" title="homepage" aria-label="homepage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="244" height="153" viewBox="0 0 244 153" fill="none">
+                        <!-- Your logo SVG content -->
+                    </svg>
+                </a>
+            </div>
+            <nav class="nmcnav_wrap" id="nmcnav_wrap" aria-label="Site Navigation">
+                <ul class="nmcnav_primary nmcnav_ul" aria-label="Primary Navigation">
+                    <li class="nmcnav_li">
+                        <button class="nmcnav_clickable nmcnav_button" aria-controls="nmcnav_dropdown-products" aria-expanded="false" id="nmcnav_button-products">
+                            <span class="nmcnav_text">Products</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.07822L1.53644 0.797852L5.76822 5.87599L10 0.797852L11.5364 2.07822L5.76822 9.00009L0 2.07822Z" fill="currentColor"></path>
+                            </svg>
+                        </button>
+                        <div id="nmcnav_dropdown-products" class="nmcnav_dropdown -dropdown -standard" aria-labelledby="nmcnav_button-products" role="region">
+                            <ul>
+                                <li><a href="custom-programming.html">Custom Programming</a></li>
+                                <li><a href="software-development.html">Software Development</a></li>
+                                <li><a href="microsoft-office.html">Microsoft Office Expert</a></li>
+                                <li><a href="financial-analysis.html">Financial Analysis</a></li>
+                                <li><a href="arcgis.html">ArcGIS</a></li>
+                                <li><a href="geospatial-databases.html">Geospatial Databases</a></li>
+                                <li><a href="api-integration.html">API Integration</a></li>
+                                <li><a href="system-integration.html">System Integration</a></li>
+                                <li><a href="data-analytics.html">Data Analytics & Visualization</a></li>
+                                <li><a href="business-intelligence.html">Business Intelligence</a></li>
+                                <li><a href="web-development.html">Web Development</a></li>
+                                <li><a href="technical-solutions.html">Technical Solutions</a></li>
+                                <li><a href="software-training.html">Software Training</a></li>
+                                <li><a href="versatile-industries.html">Versatile Across Industries</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nmcnav_li">
+                        <button class="nmcnav_clickable nmcnav_button" aria-controls="nmcnav_dropdown-about" aria-expanded="false" id="nmcnav_button-about">
+                            <span class="nmcnav_text">About Us</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.07822L1.53644 0.797852L5.76822 5.87599L10 0.797852L11.5364 2.07822L5.76822 9.00009L0 2.07822Z" fill="currentColor"></path>
+                            </svg>
+                        </button>
+                        <div id="nmcnav_dropdown-about" class="nmcnav_dropdown -dropdown -standard" aria-labelledby="nmcnav_button-about" role="region">
+                            <ul>
+                                <li><a href="our-story.html">Our Story</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="our-board.html">Our Board</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
 </html>
