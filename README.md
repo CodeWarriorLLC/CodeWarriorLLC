@@ -6,126 +6,124 @@
     <title>CodeWarrior LLC</title>
     <style>
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
+            color: #fff;
             background: url('https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417') no-repeat center center fixed;
             background-size: cover;
-            color: #fff;
+            scroll-behavior: smooth;
         }
-        .header-2024 {
+        .navbar {
+            position: fixed;
+            width: 100%;
             background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
-        }
-        .header-wrap {
+            padding: 10px 0;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+            justify-content: center;
+            z-index: 1000;
         }
-        .logo svg {
-            width: 100px;
-            height: auto;
-        }
-        nav {
-            display: flex;
-        }
-        .nmcnav_primary {
+        .navbar ul {
             list-style: none;
             display: flex;
             margin: 0;
             padding: 0;
         }
-        .nmcnav_li {
-            position: relative;
+        .navbar li {
+            margin: 0 15px;
         }
-        .nmcnav_clickable {
+        .navbar a {
             color: #fff;
             text-decoration: none;
             padding: 10px 20px;
             display: block;
             font-size: 16px;
+            transition: background 0.3s;
         }
-        .nmcnav_dropdown {
-            display: none;
-            position: absolute;
-            background: rgba(0, 0, 0, 0.9);
-            top: 100%;
-            left: 0;
-            min-width: 200px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        .navbar a:hover {
+            background: #44C7F3;
+            border-radius: 5px;
         }
-        .nmcnav_dropdown ul {
-            list-style: none;
-            margin: 0;
-            padding: 10px 0;
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
         }
-        .nmcnav_dropdown a {
+        .section h1 {
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+        .section a.button {
+            background: #44C7F3;
             color: #fff;
-            padding: 10px 20px;
-            display: block;
+            padding: 15px 30px;
+            border-radius: 5px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 1.2em;
+            transition: background 0.3s;
         }
-        .nmcnav_li:hover .nmcnav_dropdown {
-            display: block;
-        }
-        .nmcnav_text svg {
-            fill: #fff;
-            margin-left: 5px;
+        .section a.button:hover {
+            background: #357ebd;
         }
     </style>
 </head>
 <body>
-    <header class="header-2024">
-        <div class="header-wrap">
-            <div class="logo">
-                <a href="/" rel="home" title="homepage" aria-label="homepage">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="244" height="153" viewBox="0 0 244 153" fill="none">
-                        <!-- Your logo SVG content -->
-                    </svg>
-                </a>
-            </div>
-            <nav id="nmcnav_wrap" aria-label="Site Navigation">
-                <ul class="nmcnav_primary" aria-label="Primary Navigation">
-                    <li class="nmcnav_li">
-                        <a href="products.html" class="nmcnav_clickable">Products</a>
-                        <div class="nmcnav_dropdown" aria-labelledby="nmcnav_button-products" role="region">
-                            <ul>
-                                <li><a href="custom-programming.html">Custom Programming</a></li>
-                                <li><a href="software-development.html">Software Development</a></li>
-                                <li><a href="microsoft-office.html">Microsoft Office Expert</a></li>
-                                <li><a href="financial-analysis.html">Financial Analysis</a></li>
-                                <li><a href="arcgis.html">ArcGIS</a></li>
-                                <li><a href="geospatial-databases.html">Geospatial Databases</a></li>
-                                <li><a href="api-integration.html">API Integration</a></li>
-                                <li><a href="system-integration.html">System Integration</a></li>
-                                <li><a href="data-analytics.html">Data Analytics & Visualization</a></li>
-                                <li><a href="business-intelligence.html">Business Intelligence</a></li>
-                                <li><a href="web-development.html">Web Development</a></li>
-                                <li><a href="technical-solutions.html">Technical Solutions</a></li>
-                                <li><a href="software-training.html">Software Training</a></li>
-                                <li><a href="versatile-industries.html">Versatile Across Industries</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nmcnav_li">
-                        <a href="about-us.html" class="nmcnav_clickable">About Us</a>
-                        <div class="nmcnav_dropdown" aria-labelledby="nmcnav_button-about" role="region">
-                            <ul>
-                                <li><a href="our-story.html">Our Story</a></li>
-                                <li><a href="our-team.html">Our Team</a></li>
-                                <li><a href="our-board.html">Our Board</a></li>
-                                <li><a href="careers.html">Careers</a></li>
-                                <li><a href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="home" class="section">
+        <div>
+            <h1>Welcome to CodeWarrior LLC</h1>
+            <a href="index.html" class="button">Learn More</a>
         </div>
-    </header>
+    </div>
+
+    <div id="products" class="section">
+        <div>
+            <h1>Our Products</h1>
+            <a href="custom-programming.html" class="button">Custom Programming</a>
+            <a href="software-development.html" class="button">Software Development</a>
+            <a href="microsoft-office.html" class="button">Microsoft Office Expert</a>
+            <a href="financial-analysis.html" class="button">Financial Analysis</a>
+            <a href="arcgis.html" class="button">ArcGIS</a>
+            <a href="geospatial-databases.html" class="button">Geospatial Databases</a>
+            <a href="api-integration.html" class="button">API Integration</a>
+            <a href="system-integration.html" class="button">System Integration</a>
+            <a href="data-analytics.html" class="button">Data Analytics & Visualization</a>
+            <a href="business-intelligence.html" class="button">Business Intelligence</a>
+            <a href="web-development.html" class="button">Web Development</a>
+            <a href="technical-solutions.html" class="button">Technical Solutions</a>
+            <a href="software-training.html" class="button">Software Training</a>
+            <a href="versatile-industries.html" class="button">Versatile Across Industries</a>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div>
+            <h1>About Us</h1>
+            <a href="our-story.html" class="button">Our Story</a>
+            <a href="our-team.html" class="button">Our Team</a>
+            <a href="our-board.html" class="button">Our Board</a>
+            <a href="careers.html" class="button">Careers</a>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <div>
+            <h1>Contact Us</h1>
+            <a href="contact-us.html" class="button">Get in Touch</a>
+        </div>
+    </div>
+
 </body>
 </html>
