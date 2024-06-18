@@ -10,7 +10,7 @@
             margin: 0;
             font-family: Arial, sans-serif;
             background: url('https://github.com/CodeWarriorLLC/CodeWarriorLLC/assets/170987014/1dd43a63-da32-4ed0-a122-9680cc7ef417') no-repeat center center fixed;
-            background-size: cover;
+            background-size: 50% auto; /* Shrink the background image */
             color: #fff;
         }
         .header-2024 {
@@ -40,13 +40,14 @@
             border-radius: 10px;
             margin: 10px;
             padding: 20px;
-            width: calc(33.333% - 40px);
+            width: calc(25% - 40px); /* Adjusted width to make modules more square */
             box-sizing: border-box;
             text-align: center;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background 0.3s;
         }
         .module:hover {
             transform: scale(1.05);
+            background: rgba(68, 199, 243, 0.8); /* Add hover effect with background color */
         }
         .module a {
             color: #44C7F3;
@@ -125,3 +126,4 @@
     </main>
 </body>
 </html>
+
